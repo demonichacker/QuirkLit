@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuirkLit - A Home for Writers</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #000;
+            color: #ffd700;
+            opacity: 0; /* Start hidden for fade-in effect */
+        }
+        header {
+            background-color: #333;
+            color: #ffd700;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background: #444;
+            padding: 10px 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            transition: background 0.3s ease;
+        }
+        nav.scrolled {
+            background: #222;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+        }
+        nav a {
+            display: inline-block;
+            background: #555;
+            color: #ffd700;
+            text-decoration: none;
+            margin: 0 15px;
+            padding: 10px 20px;
+            font-size: 1.1em;
+            border-radius: 5px;
+            text-align: center;
+            transition: background 0.3s, transform 0.3s, box-shadow 0.3s;
+        }
+        nav a:hover {
+            background: #666;
+            transform: scale(1.1);
+            box-shadow: 0 4px 10px rgba(255, 215, 0, 0.6);
+        }
+        nav a.active {
+            background: #ffd700;
+            color: #333;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            background: #222;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
+        }
+        .cta-button {
+            display: inline-block;
+            background: #444;
+            color: #ffd700;
+            padding: 10px 20px;
+            margin: 20px 0;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+        .cta-button:hover {
+            background: #555;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background: #333;
+            color: #ffd700;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        a[href^="mailto:"] {
+            color: #ffd700;
+            text-decoration: none;
+        }
+        a[href^="mailto:"]:hover {
+            text-decoration: underline;
+        }
+        @media (max-width: 600px) {
+            nav {
+                flex-direction: column;
+            }
+            nav a {
+                margin: 5px 0;
+            }
+            .container {
+                padding: 15px;
+            }
+            .cta-button {
+                padding: 8px 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to QuirkLit</h1>
+        <p>Your Journey to Becoming a Published Writer Starts Here</p>
+    </header>
+
+    <nav>
+        <a href="#about">About Us</a>
+        <a href="#how-it-works">How It Works</a>
+        <a href="#get-started">Get Started</a>
+    </nav>
+
+    <div class="container">
+        <section id="about">
+            <h2>About QuirkLit</h2>
+            <p>QuirkLit is on the hunt for storytellers with a passion for the extraordinary.
+                If you’re a novelist or long story writer with compelling characters, vivid worlds, and unforgettable plots, we want to hear from you. Whether your stories are grounded in reality or soar into the fantastical, QuirkLit is dedicated to helping you share your creative vision with the world.
+                <br><br>
+                Your voice matters—let’s bring your story to life.</p>
+        </section>
+
+        <section id="why-choose-us">
+            <h2>Why Choose QuirkLit?</h2>
+            <p>We believe in nurturing talent and providing opportunities for writers to flourish. With a dedicated team of editors, marketers, and publishers, QuirkLit ensures that your journey from manuscript to publication is seamless and rewarding.</p>
+            <ul>
+                <li><strong>Personalized Feedback:</strong> Get constructive feedback on your work.</li>
+                <li><strong>Wide Reach:</strong> Our network ensures your stories reach a global audience.</li>
+            </ul>
+        </section>
+
+        <section id="how-it-works">
+            <h2>How It Works</h2>
+            <p>To sign a contract with us and take your writing career to the next level, here’s what you need to do:</p>
+            <ol>
+                <li>Submit a writing sample of at least <strong>5000 words</strong>.</li>
+                <li>Our team will review your submission and provide feedback.</li>
+                <li>If your work meets our standards, we’ll invite you to sign a contract and begin your journey with QuirkLit!</li>
+            </ol>
+        </section>
+
+        <section id="get-started">
+            <h2>Get Started Today</h2>
+            <p>Don’t wait to chase your dreams. Submit your writing sample and join the QuirkLit community.</p>
+            <a href="https://wa.me/2347049146832" target="_blank" class="cta-button">Submit Your Work</a>
+            <p id="response-message" style="color: #ffd700; display: none;">Thank you for your submission! Our team will get back to you shortly.</p>
+        </section>
+
+        <section id="frequently-asked-questions">
+            <h2>Frequently Asked Questions</h2>
+            <p><strong>What genres do you accept?</strong> We accept a wide range of genres, including fantasy, romance stories, urban romance, adventure, werewolf, and billionaire romance and more.</p>
+            <p><strong>Is there a submission fee?</strong> No, submitting your work to QuirkLit is completely free.</p>
+            <p><strong>How long does the review process take?</strong> Our team typically takes a weeks to review submissions.</p>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>For any inquiries or questions, please email us at <a href="mailto:support@quirklit.com">support@quirklit.com</a>.</p>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 QuirkLit. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Add a loading animation when the page is loading
+        window.addEventListener('load', () => {
+            // Set the opacity to 0 initially
+            document.body.style.opacity = 0;
+
+            // Add a delay to simulate loading (can adjust the time)
+            setTimeout(() => {
+                // Fade in the page after the delay
+                document.body.style.transition = 'opacity 1s ease';
+                document.body.style.opacity = 1;
+            }, 100); // Delay time before fading in (100ms to avoid immediate fade)
+        });
+
+        // Add hover effect to navigation links
+        document.querySelectorAll('nav a').forEach(link => {
+            link.addEventListener('mouseover', () => {
+                link.style.background = '#666';
+                link.style.transform = 'scale(1.1)';
+                link.style.boxShadow = '0 4px 10px rgba(255, 215, 0, 0.6)';
+            });
+            link.addEventListener('mouseout', () => {
+                link.style.background = '#555';
+                link.style.transform = 'scale(1)';
+                link.style.boxShadow = 'none';
+            });
+        });
+
+        // Highlight active section in navigation
+        window.addEventListener('scroll', () => {
+            const sections = document.querySelectorAll('section');
+            const nav = document.querySelector('nav');
+            const navLinks = document.querySelectorAll('nav a');
+            let currentSection = '';
+
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                if (pageYOffset >= sectionTop - 50) {
+                    currentSection = section.getAttribute('id');
+                }
+            });
+
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href').includes(currentSection)) {
+                    link.classList.add('active');
+                    link.style.textDecoration = 'underline';
+                } else {
+                    link.style.textDecoration = 'none';
+                }
+            });
+
+            // Change navbar background on scroll
+            if (window.scrollY > 50) {
+                nav.classList.add('scrolled');
+            } else {
+                nav.classList.remove('scrolled');
+            }
+        });
+    </script>
+</body>
+</html>
+
